@@ -33,6 +33,67 @@
  /* Under this Hrithik's code  */
 
 
+ #f_background{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 450px;
+
+ }
+
+#f_head{
+    margin-top: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+    
+}
+
+#f_body_1{
+    margin-left: 2%;
+    
+}
+
+
+#f_body_2 {
+    position: absolute;
+    margin-left: 32%;
+    margin-top: -17%;
+   
+    
+
+}
+
+#f_body_3 {
+    position: absolute;
+   
+}
+
+#f_body_4 {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: -17%;
+   
+}
+
+
+#f_foot_l {
+    position: absolute;
+    margin-top: 10%;
+
+    
+
+}
+
+#f_foot_r {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 10%;
+    
+
+}
 
 
 
