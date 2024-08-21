@@ -182,8 +182,21 @@ nav ul li a:hover {
 
 
 
+#instagram_text{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -15%;
+    font-weight: 900;
+    font-size: 26px;
+    color: white;
+    padding: 0%;
+}
 
-
+#instagram_logo{
+    position: absolute;
+    margin-left: 80%;
+    margin-top: -14%;
+}
 
  /* Under this Hrithik's code  */
 
@@ -197,7 +210,6 @@ nav ul li a:hover {
  }
 
 #f_head{
-    margin-top: 10%;
     text-align: center;
     display: flex;
     justify-content: space-evenly;
