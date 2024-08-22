@@ -1,7 +1,7 @@
  /* Under this Himanshu's code */
- html {
+/* * {
     overflow-x: hidden;
-}
+} */
 
 body {
     font-family: Arial, sans-serif;
@@ -18,42 +18,103 @@ header {
     background-color: #fff;
 }
 
-
 .logo {
-    margin-left: 20px;
-    width: 200px;
-    margin-top: 15px;
+    margin-left: 19px;
+    width: 197px;
+    margin-top: 17px;
     margin-bottom: 15px;
+}
+
+
+
+/* .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.search-bar:hover {
+    color-scheme: rgb(0, 0, 0, 0.6);
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
-.search-bar input {
-    padding: 0.5vw;
-    border-radius: 5px 0 0 5px;
+.search-bar input[type="text"] {
+    padding: 8px 40px 8px 15px;
     border: 1px solid #ccc;
-    outline: none;
-    font-size: 1vw;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 300px;
 }
 
 .search-bar button {
-    padding: 0;
+    position: absolute;
+    right: 10px;
     border: none;
-    background-color: #d32f2f;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
+    background: none;
     cursor: pointer;
-    font-size: 1vw;
+    padding: 5px 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.ccc {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.aaa {
+    /* display: flex; */
+    margin: 9px 10px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    /* flex-wrap: nowrap; */
+}
+
+.zzz {
+    /* display: flex; */
+    /* list-style: none; */
+    /* flex-direction: row; */
+    text-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+.sss {
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    align-items: flex-end;
+    /* flex-wrap: nowrap; */
+    justify-content: space-evenly;
+}
+
+.xxx {
+    /* display: flex; */
+    /* list-style: none; */
+    flex-direction: row;
+    justify-content: space-between;
     text-wrap: nowrap;
 }
 
-.search-bar button i {
-    font-size: 1.5vw;
+.li1 {
+    margin-right: 24px;
+    padding: 0;
 }
+
+.li2 {
+    margin-right: 30px;
+    padding: 0;
+}
+
 
 .contact-info {
     text-align: right;
@@ -77,7 +138,7 @@ header {
 
 nav {
     background-color: #fff;
-    border-top: 1px solid #eee;
+    margin-bottom: 80px;
 }
 
 nav ul {
@@ -90,7 +151,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: rgba(1, 1, 1, 0.6);
     font-weight: bold;
     font-size: 12px;
 }
@@ -110,7 +171,7 @@ nav ul li a.new::before {
 }
 
 nav ul li:hover {
-    transform: scale(1.5);
+    transform: scale(1.1);
     transition: transform .2s;
 
 }
@@ -133,20 +194,40 @@ nav ul li a:hover {
         margin-left: 0px;
         padding-left: 5px;
     }
-    .search-bar {
-        display: flex;
-        flex-shrink: 0.75;  
-        justify-content: flex-start;
-        margin-bottom: 10px;
-        margin-left: 10px;
-    }
+   
+.search-bar {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+}
 
-    .search-bar button {
-        display: flex;
-        flex-shrink: 0.75;
-        justify-content: flex-start;
+.search-bar input {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.25vw;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 0.5vw;
+}
 
-    }
+.search-bar button {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    border: none;
+    background-color: #d32f2f;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 0.5w;
+    text-wrap: nowrap;
+}
+
+.search-bar button i {
+    font-size: 0.25vw;
+}
+
 
     .contact-info {
         text-align: center;
