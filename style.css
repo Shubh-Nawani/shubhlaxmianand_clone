@@ -9,6 +9,12 @@ body {
     padding: 0;
 }
 
+/* #f_foot_r img{
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+} */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -273,7 +279,7 @@ nav ul li a:hover {
     position: absolute;
     margin-left: 70%;
     margin-top: 5%;
-    background-color: white;
+    background-color: #222529;
     border-radius: 1%;
     padding-left: 10px;
     display: flex;
