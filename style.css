@@ -1,379 +1,335 @@
- /* Under this Himanshu's code */
-/* * {
-    overflow-x: hidden;
-} */
-
+/* general css */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-/* #f_foot_r img{
-    border: 2px solid red;
-    background-color: black;
-    color: white;
-} */
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 70px;
-    margin: 0 80px;
-    background-color: #fff;
-}
-
-.logo {
-    margin-left: 19px;
-    width: 197px;
-    margin-top: 17px;
-    margin-bottom: 15px;
-}
-
-
-
-/* .search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.search-bar:hover {
-    color-scheme: rgb(0, 0, 0, 0.6);
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.search-bar input[type="text"] {
-    padding: 8px 40px 8px 15px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 14px;
-    width: 300px;
-}
-
-.search-bar button {
-    position: absolute;
-    right: 10px;
-    border: none;
-    background: none;
-    cursor: pointer;
-    padding: 5px 5px;
-    font-size: 16px;
+    background-color: #f8f8f8;
     color: #333;
 }
 
-.ccc {
+/* header css */
+header {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 80px;
+    position: relative;
+    z-index: 1000;
+}
+
+.header-container {
     display: flex;
-    flex-direction: row;
-}
-
-
-.aaa {
-    /* display: flex; */
-    margin: 9px 10px;
-    padding: 0;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    /* flex-wrap: nowrap; */
-}
-
-.zzz {
-    /* display: flex; */
-    /* list-style: none; */
-    /* flex-direction: row; */
-    text-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-
-.sss {
-    /* display: flex; */
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    align-items: flex-end;
-    /* flex-wrap: nowrap; */
-    justify-content: space-evenly;
+.logo-link img {
+    width: 195px;
+    padding: 17px 90px;
 }
 
-.xxx {
-    /* display: flex; */
-    /* list-style: none; */
-    flex-direction: row;
-    justify-content: space-between;
-    text-wrap: nowrap;
+.search-container {
+    display: flex;
+    align-items: center;
 }
 
-.li1 {
-    margin-right: 24px;
-    padding: 0;
-}
-
-.li2 {
-    margin-right: 30px;
-    padding: 0;
-}
-
-
-.contact-info {
-    text-align: right;
-    padding-right: 20px;
-}
-
-.contact-info p {
-    margin: 0;
+.search-input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
     font-size: 14px;
+    width: 450px;
 }
 
-.contact-info .phone-number {
+.search-button {
+    background: none;
+    margin-right: 250px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 18px;
+}
+
+.contact-container {
+    text-align: right;
+    text-wrap: nowrap;
+    width: 180px;
+    margin-right: 25px;
+}
+
+.contact-text {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 150px;
+}
+
+.contact-number {
+    font-size: 14px;
     font-weight: bold;
-    font-size: 16px;
+    margin-top: 5px;
+    margin-right: 180px;
+    color: #222222;
 }
 
-.contact, .stores {
-    color: red;
+/* Navigation css */
+
+.kids {
+    margin-right: 50px;
+}
+
+.contact-link {
+    margin-left: 0px;
 }
 
 
 nav {
+    display: flex;
     background-color: #fff;
-    margin-bottom: 80px;
+    position: sticky;
+    scroll-behavior: auto;
+
 }
 
-nav ul {
+.nav-list {
     display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: 0px 80px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
     padding: 10px 80px;
 }
 
-nav ul li a {
+.nav-list li {
+    padding: 10px 15px;
+}
+
+.nav-list li a {
     text-decoration: none;
-    color: rgba(1, 1, 1, 0.6);
+    color: rgba(0,0,0,0.65);
     font-weight: bold;
     font-size: 12px;
 }
 
-nav ul li a.new {
-    color: green;
-}
-
-nav ul li a.new::before {
-    content: 'NEW';
-    font-size: 10px;
-    color: white;
-    background-color: green;
-    padding: 2px 4px;
-    border-radius: 3px;
-    margin-right: 5px;
-}
-
-nav ul li:hover {
-    transform: scale(1.1);
-    transition: transform .2s;
-
-}
-
-nav ul li a:hover {
-    color: red;
+.nav-list li:hover {
+    transform: scale(1.05);
     transition: 0.35s;
 }
 
-@media (max-width: 1200px) {
-    .logo h1, .logo h1 span, .search-bar input, .search-bar button, .search-bar button i, .contact-info, .contact-info .phone-number, nav ul li a {
-        font-size: 3vw;
-    }
-
-    header {
-        margin: 2px 2px;
-    } 
-    
-    .logo {
-        margin-left: 0px;
-        padding-left: 5px;
-    }
-   
-.search-bar {
-    display: flex;
-    align-items: left;
-    justify-content: flex-start;
+.nav-list li:hover a {
+    color: #e91e63;
+    transition: color 0.3s ease;
 }
 
-.search-bar input {
+
+.nav-list-2 {
     display: flex;
-    justify-content: flex-start;
-    padding: 0.25vw;
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #ccc;
-    outline: none;
-    font-size: 0.5vw;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 10px 80px;
 }
 
-.search-bar button {
+.nav-list-2 li {
+    padding: 10px 15px;
+}
+
+.nav-list-2 li a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.65);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.nav-list-2 li:hover {
+    transform: scale(1.05);
+    transition: 0.35s;
+}
+
+.nav-list-2 li:hover a {
+    color: #e91e63;
+    transition: color 0.3s ease;
+}
+
+
+.nav-new {
+    color: #4caf50;
+}
+
+
+
+/* main content css */
+.slider-container {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.thumbnail-container {
     display: flex;
-    justify-content: flex-start;
-    padding: 0;
-    border: none;
-    background-color: #d32f2f;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.thumbnail-image {
+    width: 150px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-image:hover {
+    transform: scale(1.05);
+}
+
+/* IG css */
+.instagram-bar {
+    position: relative;
+    text-align: center;
+}
+
+.instagram-background {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.instagram-logo img {
+    width: 100px;
+    position: absolute;
+    top: 20%;
+    left: 47%;
+}
+
+.instagram-text {
+    align-self: center;
     color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 0.5w;
-    text-wrap: nowrap;
+    font-weight: bold;
+    font-size: 24px;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    top: 50%;
 }
 
-.search-bar button i {
-    font-size: 0.25vw;
+/* footer css */
+footer {
+    background-color: #232529;
+    color: #fff;
+    padding: 50px 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 23%;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #e91e63;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.payment-icons {
+    display: flex;
+    justify-content: center;
 }
 
 
-    .contact-info {
+/* compatibility :-) */
+
+@media (max-width: 768px) {
+    .header-container,
+    .nav-list,
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav-list li {
+        padding: 10px 5px;
+    }
+
+    .slider-container,
+    .instagram-bar {
+        padding: 20px 10px;
+    }
+
+    .main-image,
+    .thumbnail-image {
+        width: 100%;
+    }
+
+    .footer-section {
+        width: 100%;
         text-align: center;
     }
 
-    nav ul {
+    .footer-bottom {
         flex-direction: column;
-        align-items: center;
-    }
-    
-    nav, .contact-info {
-        display: none;
     }
 }
 
 
-
-
-
-
-
-
-
- /* Under this Shubh's & Chaitanya's code */
-
-
-
-
-
-
-
-
-
-
-
-#instagram_text{
-    position: absolute;
-    margin-left: 10%;
-    margin-top: -15%;
-    font-weight: 900;
-    font-size: 26px;
-    color: white;
-    padding: 0%;
+@media (max-width: 1200px) {
+    .search-input {
+        padding: 8px 12px;
+        font-size: 14px;
+        width: 250px;
+    }
+    .search-button {
+        margin: 0px;
+        padding: 8px;
+        font-size: 16px;
+    }
 }
 
-#instagram_logo{
-    position: absolute;
-    margin-left: 80%;
-    margin-top: -14%;
+@media (max-width: 768px) {
+    .instagram-logo img {
+        top: 10%;
+        left: 43%;
+    }
+
+    .instagram-text {
+        top: 40%;    
+    }
 }
-
- /* Under this Hrithik's code  */
-
-
- #f_background{
-    background-color: #232529;
-    color: white;
-    width: 100%;
-    height: 600px;
-
- }
-
-#f_head{
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 600px;
-    padding-top: 3%;
-    
-
-    
-}
-
-#f_body_1{
-    margin-left: 8.3%;
-    font-family: sans-serif;
-    font-size: 16px;
-
-}
-
-
-#f_body_2 {
-    position: absolute;
-    margin-left: 28%;
-    margin-top: -31%;
-    font-family: sans-serif;
-    font-size: 16px;
-   
-    
-
-}
-
-#f_body_3 {
-    position: absolute;
-    font-family: sans-serif;
-    font-size: 16px;
-   
-}
-
-#f_body_4 {
-    position: absolute;
-    margin-left: 72%;
-    margin-top: -32%;
-    font-family: sans-serif;
-    font-size: 18px;
-   
-}
-
-
-#f_foot_l {
-    position: absolute;
-    margin-top: 5%;
-    margin-left: 2%;
-    font-weight: 400;
-    font-size: 14px;
-
-    
-
-}
-
-#f_foot_r {
-    position: absolute;
-    margin-left: 70%;
-    margin-top: 5%;
-    background-color: #222529;
-    border-radius: 1%;
-    padding-left: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    width: 300px;
-    
-    
-
-}
-
-
-
-
-
-
- 
